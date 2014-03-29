@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Pan1</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Page1.html">index</a></li>
+<li><a href="Today.html">Fortune</a></li>
+</ul>
+</nav>
+<div id="clear"></div>
+<div id="show"></div>
+<div id="js">
+<script>
+document.write("hello world");
+var today = new Date();
+document.write('<br>');
+document.write(today);
+document.write('<br>');
+document.write(today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear());
+
+var rand = Math.random();
+var rand1 = Math.floor(rand*5);
+document.write('<br>');
+document.write(rand);
+document.write('<br>');
+document.write(rand1);
+
+</script>
+</div>
+<form>
+<input id="name" placeholder="What is your name?">
+<button id="button">click me</button>
+
+</form>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#js").hide();
+	var fortune = [" you will be famous"," you will be rich"," you'll die in fire"," you will be poor"," you will be murder in the black ally"]
+	;
+	$("#button").click(function(event){
+		event.preventDefault();
+		var rand = Math.random();
+		var rand1 = Math.floor(rand*5);	
+		var name = $("#name").val();
+		$("#show").html("welcome "+name +" your furtune is that" +fortune[rand1]);
+	
+	});
+	
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+background: #8A2BE2;
+color: black;
+}
+
+h1{
+background: lime;
+color: blue;
+text-align: center;
+}
+
+a{
+color: black;
+}
+.yellow{
+color: yellow;
+}
+
+.brown{
+color:brown;
+}
+
+.red{
+position:relative;
+background:red;
+width: 100px;
+height: 100px;
+margin: 100px 0 0 625px;
+overflow: auto;
+z-index:10;
+}
+
+
+.blue{
+position:relative;
+background:blue;
+width: 100px;
+height: 100px;
+margin: -50px 0 0 665px;
+z-index:1;
+}
+
+.blue:hover{
+background:green;
+width: 200px;
+height: 200px;
+
+
+}
+
+img{
+border: 10px white groove;
+}
+
+img:hover{
+opacity: .5;
+border: 20px white groove;
+transform: skew(10deg); 
+-webkit-transform: skew(34deg);
+}
+
+@-webkit-keyframes spin
+{
+0% {-webkit-transform rotateX(0 deg); -webkit-transform-origin: 0% 50% 0;}
+100% {-webkit-transform rotateX(360 deg); -webkit-transform-origin: 0% 50% 0;}
+}
+@keyframes spin
+{
+0% {-webkit-transform rotateX(0 deg); -webkit-transform-origin: 0% 50% 0;}
+100% {-webkit-transform rotateX(360 deg); -webkit-transform-origin: 0% 50% 0;}
+}
+
+nav ul{
+list-style-type: none;
+}
+
+nav ul li{
+float: left;
+margin: 0 5px;
+}
+
+nav  ul li a{
+display: block;
+background: crimson;
+color:cornsilk;
+width: 300px;
+height:150px;
+font-size:1.5em;
+text-decoration:none;
+text-align:center;
+padding-top: 15px;
+}
+
+nav ul li a:hover{
+background:black;
+color:crimson;
+font-size:1.7em;
+
+}
+
+nav{
+width: 90%;
+margin: 0 auto;
+}
+#clear{
+clear:both;
+
+
+}
+#show{
+font-size:3em;
